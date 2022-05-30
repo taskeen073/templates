@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<style>
+body {margin: 160px;font-family:Arial}
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  min-width: 900px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 900px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 16px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn" > Home  <i class="fa fa-caret-down"></i>
+</button>
+        <div id="myDropdown" class="dropdown-content">
+          {%reHome%}
+          
+        </div>
+      </div>
+
+
+      <br><br><br><br><br>
+      <div class="dropdown1" style ="padding-top:20px">
+        <button onclick="myFunction1()" class="dropbtn"> Order  <i class="fa fa-caret-down"></i>
+</button>
+        <div id="myDropdown1" class="dropdown-content">
+          {%reOrder%}
+        </div>
+      </div>
+
+
+      <br><br><br><br><br>
+      <div class="dropdown2" style ="padding-top:20px">
+        <button onclick="myFunction2()" class="dropbtn"> recipt  <i class="fa fa-caret-down"></i>
+</button>
+        <div id="myDropdown2" class="dropdown-content">
+          {%reRecipt%}
+        </div>
+      </div>
+
+
+      <br><br><br><br><br>
+      <div class="dropdown3" style ="padding-top:20px">
+        <button onclick="myFunction3()" class="dropbtn"> setup  <i class="fa fa-caret-down"></i>
+</button>
+        <div id="myDropdown3" class="dropdown-content">
+       	   {%reSetup%}
+        </div>
+      </div>
+   
+      
+      <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      function myFunction1() {
+        document.getElementById("myDropdown1").classList.toggle("show");
+      }
+      function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+      }
+      function myFunction3() {
+        document.getElementById("myDropdown3").classList.toggle("show");
+      }
+      
+      
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      
+      
+      
+      </script>
+ 
+</body>
+</html>

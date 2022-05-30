@@ -1,0 +1,6 @@
+Login   : Login 
+Menu    : Button(Back,Shutdown) , Navbar(from html) , ButtonMenu(Report,FAQ,FoemButtomStatus)     
+NavBar  :finditlink(onepage) , Navbar(from html)
+FormButtonStatus(keen)
+{FAQ:Report:SOBREE} [report:GridDB @menu.Navbar , EditFind],[FAQ:GridDB @menu.Navbar , EditFind]
+////////////////////////////////CRUD:MYSQL//////////////////////////////////////////////////////////

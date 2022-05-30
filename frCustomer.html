@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="TH">
+  <head>
+    <title>Customer</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+      integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      #LBLTITLE {
+        font-size: 1.5rem;
+      }
+      .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .btn-spacing {
+        padding-top: 2%;
+        align-self: center;
+      }
+      input {
+        background-color: blanchedalmond;
+      }
+      img {
+        height: 35px;
+        width: 35px;
+      }
+      input[type="button"] {
+        padding: 15px 12vmin;
+      }
+      #DBGCUSTOMER {
+        max-height: 50vh;
+        width: 95vw;
+        display: inline-flex;
+        border-collapse: separate;
+        overflow: auto;
+        z-index: 1;
+      }
+    </style>
+
+    <!--ดู Class Intraweb ใน inspect เอา-->
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light d-flex flex-row justify-content-between"
+      style="background-color: white"
+    >
+      <span> {%btBack%}</span>
+
+      <span> {%btNext%}</span>
+    </nav>
+
+    <div class="container">
+      <div>{%edCode%} {%btSearch%}</div>
+    </div>
+    <div
+      style="margin-left: 1%"
+      class="table-responsive table table-hover table-striped"
+    >
+      {%dbgCustomer%}
+    </div>
+  </body>
+</html>

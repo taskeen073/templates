@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="TH">
+  <head>
+    <title>Product</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+      integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+      }
+
+      input[type="button"] {
+        width: 50%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px;
+        background-color: #7fb2d4; /*ฟ้า*/
+        color: white;
+        font-size: 1rem;
+      }
+
+      .container {
+        padding: 25px;
+        background-color: white;
+      }
+      img {
+        height: 35px;
+        width: 35px;
+      }
+    </style>
+
+    <!--ดู Class Intraweb ใน inspect เอา-->
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light d-flex flex-row justify-content-between"
+      style="background-color: white"
+    >
+      <span> {%btBack%}</span>
+
+      <span> {%btConfirm%}</span>
+    </nav>
+    <div class="container">
+      <div>{%lbCode%} {%edCode%}</div>
+      <div>{%lbName%} {%lbdbName%}</div>
+      <div>{%lbItems%} {%edItems%}</div>
+      <div>{%lbAmount%} {%lbdbAmount%}</div>
+      <div>{%lbDiscount%} {%edDiscount%}</div>
+      <div>{%lbTotal%} {%lbdbTotal%}</div>
+    </div>
+  </body>
+</html>

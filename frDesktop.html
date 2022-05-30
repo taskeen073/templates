@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="TH">
+  <head>
+    <title>เมนู</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+      integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      #LBLTITLE {
+        font-size: 1.5rem;
+      }
+      .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .btn-spacing {
+        padding-top: 2%;
+        align-self: center;
+      }
+      img {
+        height: 100px;
+        width: 100px;
+      }
+      .ui-tabs-nav a img {
+        height: 50px;
+        width: 50px;
+      }
+
+      img.BTEXITCSS {
+        height: 35px;
+        width: 35px;
+      }
+
+      .ui-tabs-nav {
+        position: fixed;
+        bottom: 0;
+        max-width: 95%;
+        width: 100vw;
+        padding: 0%;
+      }
+      .ui-corner-all {
+        border-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+      .ui-widget-header {
+        border: 1px solid rgba(221, 221, 221, 0);
+        background: #e9e9e900;
+        color: rgba(51, 51, 51, 0);
+        font-weight: bold;
+      }
+
+      @media screen and (min-width: 801px) {
+        .ui-tabs-nav li {
+          height: 5vw !important;
+          width: 23%;
+          margin: 1em;
+        }
+        #TABDESKTOP .ui-tabs .ui-tabs-nav li a {
+          font-weight: bold;
+          font-style: normal;
+          font-size: 1vw;
+          text-decoration: none !important;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        .ui-tabs-nav li {
+          height: 10vw !important;
+          width: 23%;
+          margin: 1em;
+        }
+        #TABDESKTOP .ui-tabs .ui-tabs-nav li a {
+          font-weight: bold;
+          font-style: normal;
+          font-size: 4vw;
+          text-decoration: none !important;
+        }
+        .ui-tabs-nav a img {
+          height: 40px;
+          width: 40px;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
+        .ui-tabs-nav li {
+          height: 14vw !important;
+          width: 20%;
+          margin: 1em;
+        }
+        #TABDESKTOP .ui-tabs .ui-tabs-nav li a {
+          font-weight: bold;
+          font-style: normal;
+          font-size: 4vw;
+          text-decoration: none !important;
+        }
+        .ui-tabs-nav a img {
+          height: 30px;
+          width: 30px;
+        }
+      }
+      /*PAGEBREAK*/
+      @media screen and (max-width: 354px) {
+        #BTORDER {
+          margin-top: 1%;
+          margin-left: 0%;
+        }
+      }
+
+      .ui-tabs {
+        float: left;
+      }
+
+      #id_TABDESKTOP_ORDER {
+        height: 100%;
+        width: 100%;
+      }
+
+      .ui-tabs .ui-tabs-nav li {
+        float: none;
+        display: inline-flex;
+        justify-content: space-around;
+      }
+
+      .ui-state-active,
+      .ui-widget-content .ui-state-active,
+      .ui-widget-header .ui-state-active,
+      a.ui-button:active,
+      .ui-button:active,
+      .ui-button.ui-state-active:hover {
+        border: 1px solid #809fff;
+        background: #83c1ff;
+        font-weight: normal;
+        color: #fff;
+      }
+
+      .ui-state-hover,
+      .ui-widget-content .ui-state-hover,
+      .ui-widget-header .ui-state-hover,
+      .ui-state-focus,
+      .ui-widget-content .ui-state-focus,
+      .ui-widget-header .ui-state-focus,
+      .ui-button:hover,
+      .ui-button:focus {
+        border: 1px solid rgb(0, 0, 0);
+        background: #2b5cfffa;
+        font-weight: normal;
+        color: #2b2b2b;
+      }
+
+      #TABDESKTOP {
+        max-height: 80vh;
+        width: 100vw;
+        display: inline-flex;
+        border-collapse: separate;
+        overflow: auto;
+        z-index: 1;
+      }
+      #REGIONHOME {
+        width: 100%;
+        height: 100%;
+      }
+      #REGIONORDER {
+        width: 100%;
+        height: 100%;
+      }
+      #REGIONRECEIPT {
+        width: 100%;
+        height: 100%;
+      }
+      #REGIONSETUP {
+        width: 100%;
+        height: 100%;
+      }
+      div + div {
+        margin-left: 1%;
+      }
+    </style>
+
+    <!--ดู Class Intraweb ใน inspect เอา-->
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light d-flex flex-row justify-content-between"
+      style="background-color: white"
+    >
+      <span> {%lbText%}</span>
+
+      <span> {%lbUser%}</span>
+
+      <span>{%btExit%}</span>
+    </nav>
+
+    {%tabDesktop%}
+  </body>
+</html>
